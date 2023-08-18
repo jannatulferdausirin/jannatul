@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  padding: 205px;
+  width: 400px;
+  background-color: rgb(68, 13, 79);
+  color:deepskyblue;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+  position: relative;
+}
+h1 {
+  display: inline-block;
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+h1::before {
+  height: 5px;
+  width: 150px;
+  position: absolute;
+  top: 50%;
+  background: deepskyblue;
+  content: "";
+  top: 50%;
+  left: -160px;
+  transform: translateY(-50%);
+}
+h1::after {
+  height: 5px;
+  width: 150px;
+  position: absolute;
+  top: 50%;
+  background: deepskyblue;
+  content: "";
+  top: 50%;
+  right: -160px;
+  transform: translateY(-50%);
+}
+
+.line::before {
+  position: absolute;
+  background-color: deepskyblue;
+  content: "";
+  height: 150px;
+  width: 5px;
+  left: 50%;
+  top: 35px;
+  /* transform: translateX(48%); */
+}
+.line::after {
+  position: absolute;
+  background-color:deepskyblue;
+  content: "";
+  height: 150px;
+  width: 5px;
+  left: 50%;
+  bottom: 8%;
+  /* transform: translateX(48%); */
+}
+.criss::before {
+  position: absolute;
+  background-color:deeppink;
+  content: "";
+  height: 175px;
+  width: 5px;
+  left: 40%;
+  top:35px;
+  transform:rotate(-45deg);
+}
+.criss::after {
+  position: absolute;
+  background-color:deeppink;
+  content: "";
+  height: 175px;
+  width: 5px;
+  right: 40%;
+  top:35px;
+  transform: rotate(45deg);
+}
+.cross::before {
+  position: absolute;
+  background-color:deeppink;
+  content: "";
+  height: 175px;
+  width: 5px;
+  left: 40%;
+  bottom: 8%;
+  transform: rotate(45deg);
+}
+.cross::after {
+  position: absolute;
+  background-color:deeppink;
+  content: "";
+  height: 175px;
+  width: 5px;
+  right: 39%;
+  bottom: 8%;
+  transform: rotate(-45deg);
+}
+.bottom::before {
+  height: 5px;
+  width: 75px;
+  position: absolute;
+  top: 50%;
+  background: deeppink;
+  content: "";
+  top: 55%;
+  left:35%;
+  transform: translateY(-50%);
+}
+.top::after {
+  height: 5px;
+  width: 75px;
+  position: absolute;
+  top: 50%;
+  background: deeppink;
+  content: "";
+  top: 46%;
+  right: 35%;
+  transform: translateY(-50%);
+}
+.top::before {
+  height: 5px;
+  width: 75px;
+  position: absolute;
+  top: 50%;
+  background: gold;
+  content: "";
+  top: 46%;
+  left:35%;
+  transform: translateY(-50%);
+}
+.bottom::after {
+  height: 5px;
+  width: 75px;
+  position: absolute;
+  top: 50%;
+  background:gold;
+  content: "";
+  top: 55%;
+  right: 35%;
+  transform: translateY(-50%);
+}
